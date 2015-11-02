@@ -117,6 +117,7 @@ public class AccountControllerTest {
                 .content("{\"name\":\"test\",\"password\":\"test\"}")
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isConflict());
+
     }
 
     @Test
